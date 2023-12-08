@@ -7,9 +7,10 @@ int max_of_four(int a, int b, int c, int d){
     int values[] = {a,b,c,d};
     int highest = values[0];
 
-    for (int i = 1; i < 3; i++){  
-        if(values[i] > highest)
-        highest = values[i];
+    for (int i = 1; i <= 3; i++){  
+        if(values[i] > highest){
+            highest = values[i];
+        }
     }
 
     return highest;    
